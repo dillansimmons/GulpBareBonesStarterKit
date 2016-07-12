@@ -1,0 +1,21 @@
+{
+  "name": "Change ME",
+  "version": "1.0.0",
+  "description": "Change ME",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Change ME",
+    "Change ME",
+    "Change ME"
+  ],
+  "author": "Yesler-Dev",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0"
+  }
+}
