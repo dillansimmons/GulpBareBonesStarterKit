@@ -1,8 +1,7 @@
 {
-<<<<<<< HEAD
   "name": "Marketo-Starter",
   "description": "Gulp based workflow for creating marketo templates",
-  "version": "0.1.2",
+  "version": "0.0.3",
   "license": "MIT",
   "author": {
     "name": "Dillan Simmons",
@@ -26,25 +25,4 @@
         "gulp-coffee": "*"
 },
   "dependencies": {}
-=======
-  "name": "Change ME",
-  "version": "1.0.0",
-  "description": "Change ME",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Change ME",
-    "Change ME",
-    "Change ME"
-  ],
-  "author": "Yesler-Dev",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-livereload": "^3.8.1",
-    "gulp-plumber": "^1.1.0"
-  }
->>>>>>> 7e3abf7cd829cd20209f69fe68ecbbcfcd398eab
 }
