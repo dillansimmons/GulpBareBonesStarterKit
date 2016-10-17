@@ -23,17 +23,9 @@ gulp.task('lint', function() {
 
 // Compress Images
 gulp.task('images', function() {
-    var imgSrc = '/img/**/*',
-        imgDst = 'dist/img';
-
-    return gulp.src(imgSrc)
-        .pipe(plumber({
-            errorHandler: onError
-        }))
-        .pipe(changed(imgDst))
+    gulp.src('img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest(imgDst))
-        .pipe(notify({ message: 'Images task complete' }));
+        .pipe(gulp.dest('final/img'))
 });
 
 // Live Reload
@@ -58,6 +50,7 @@ gulp.task('minify-css', function() {
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('dist/css/min/'))
+    .pipe(gulp.dest('./final'))
     .pipe(connect.reload());
 });
 
@@ -71,6 +64,12 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist/js'));
 });
 
+// Send HTML to final folder
+gulp.task('move-final', function() {
+    gulp.src(['./*.html', './dist/js/**/*', './dist/css/min/style.css'])
+    .pipe(gulp.dest('./final'));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
@@ -79,4 +78,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'minify-css', 'scripts', 'watch', 'connect']);
+gulp.task('default', ['lint', 'sass', 'minify-css', 'images', 'scripts', 'watch', 'move-final', 'connect']);
