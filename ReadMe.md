@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # Marketo Base Template V.0.3 - ReadMe File
 Last edited: Oct 17 2016 - Dillan Simmons :robot:
+=======
+# Marketo Base Template V.0.1 - ReadMe File
+Last edited: July 12 2016 - Dillan Simmons :robot:
+>>>>>>> 7e3abf7cd829cd20209f69fe68ecbbcfcd398eab
 
 ## Purpose
 
@@ -9,6 +14,7 @@ Gulp is used in this template to:
 
 * Compile our SASS file into CSS.
 * Compress our CSS and JS files to improve load time.
+<<<<<<< HEAD
 * Optimize our images.
 * Gives us a server and the ability for live reload edits at: `http://localhost:8080/`
 * Pushes neccissary files for Marketo upload into a final directory. 
@@ -30,6 +36,22 @@ You will need the following tools installed in order to complete the setup (inst
 
 1. In Marketo Create go to design studio and create a new folder in images and files matching your project name. Import each individual file within the final folder / excluding "index.html" into this folder.
 2. Import your final/index.html file as a new landing page, and update the local urls to point to the corresponding files you imported into your project folder in Images and Files. 
+=======
+* Optimizes our images.
+* Gives us a server and the ability for live reload edits at: `http://localhost:8080/`
+
+## To Use This Starter Template
+
+1. Drag the main folder onto your desktop and rename it in this format: ProjectCode-Name-of-project. i.e: *14-0993-Marketo-Base-Template*
+2. Open terminal and navigate to your project folder. Once you are inside the folder run `gulp`. This will start live reload and the build processes.
+3. Go to `http://localhost:8080/` in chrome, making sure you have [live reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) installed and running. 
+4. Edit index.html, the SASS, and JS the files like you would any other starting template. 
+
+## To Export your Assets Into Marketo
+
+1. In Marketo Create go to design studio and create a new folder in images and files matching your project name. Import each individual file within DIST and IMG into this folder.
+2. Import your index.html file as a new landing page, and update the local urls to point to the corresponding files you imported into your project folder in Images and Files. 
+>>>>>>> 7e3abf7cd829cd20209f69fe68ecbbcfcd398eab
 
 ## Base File Structure
 
@@ -39,15 +61,25 @@ You will need the following tools installed in order to complete the setup (inst
 	+ (main.scss) is the main CSS file you should edit. It will compile down into dist/css/min/style.css
 * **DIST**
 	+ **JS** 
+<<<<<<< HEAD
 		+ (all.js) all of your JS concatenated. (pushes to final folder)
 		+ (all.min.js) all of your  JS concatenated **and** minified. (pushes to final folder)
+=======
+		+ (all.js) all of your JS concatenated. 
+		+ (all.min.js) all of your  JS concatenated **and** minified. 
+>>>>>>> 7e3abf7cd829cd20209f69fe68ecbbcfcd398eab
 	+ **CSS**
 		+ (main.css) all of your SASS compiled into CSS.
 		+ **MIN**
 			+ (style.css) all of you SASS compiled into CSS **and** minified. 
 * gulpfile.js - this is the gulp file that will handle all your minification, compiling, and live updates.
+<<<<<<< HEAD
 * **IMG** - this will contain your minified image files. (pushes to final folder)
 * index.html - this is the main HTML file for your landing page. (pushes to final folder)
+=======
+* **IMG** - this will contain your image files.
+* index.html - this is the main HTML file for your landing page. 
+>>>>>>> 7e3abf7cd829cd20209f69fe68ecbbcfcd398eab
 * **JS** - This contains your Javascript files they will compile down into dist/js/all.min.js 
 	+ Vendor - This contains all of your vendor specific JS. Like JQuery, bootstrap.js, etc...
 * node_modules - Contains your node packages **Ignore this file**.
