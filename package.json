@@ -1,7 +1,7 @@
 {
-  "name": "Marketo-Starter",
-  "description": "Gulp based workflow for creating marketo templates",
-  "version": "0.0.3",
+  "name": "Gulp-Starter",
+  "description": "Gulp based workflow for creating basic webpage templates",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Dillan Simmons",
@@ -9,7 +9,7 @@
   },
   "engines": {
    "node": ">=0.10.0",
-    "npm": ">=1.3"
+    "npm": ">=3.0.2"
   },
     "devDependencies": {
         "gulp": "*",
